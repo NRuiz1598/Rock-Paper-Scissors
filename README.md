@@ -10,4 +10,4 @@
 - I want to understand better how functions work.
 - Being better at loops and conditionals if I use them. 
 - Improve at problem solving and debugging.
-- Try not to repeat code.
+- Try not to make redundant code.
