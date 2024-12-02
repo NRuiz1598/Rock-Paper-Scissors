@@ -19,45 +19,54 @@ function getComputerChoice() {
 
 getComputerChoice()
 
-let humanScore = 0; 
-let computerScore = 0;
 
 
-function playRound(humanChoice, computerChoice) {
+function playRound() {
 
-        // USER CHOOSES ROCK
+    let humanScore = 0; 
+    let computerScore = 0;
+    let round = 0
 
-        if (humanChoice === "rock" && computerChoice === "scissors" ) {
-            return console.log("You win this round! Rock defeats scissors!");
-        }else if (humanChoice === "rock" && computerChoice === "paper"){
-            return console.log("You lose this round! Paper defeats rock!");
-        }else if (humanChoice === "rock" && computerChoice === "rock") {
-            return console.log("It's a draw! You both drew rock!");
-        }
-          
-        // USER CHOOSES SCISSORS
+        do {
 
-        if (humanChoice === "scissors" && computerChoice === "paper") {
-            return console.log("You win this round! Scissors defeats paper!")
-        } else if (humanChoice === "scissors" && computerChoice === "rock") {
-            return console.log("You lose this round! Rock defeats scissors!");
-        } else if (humanChoice === "scissors" && computerChoice === "scissors") {
-            return console.log("It's a draw! You both drew scissors!");
-        }
+            const humanSelection = getHumanChoice();
+            const computerSelection = getComputerChoice();
 
-        // USER CHOOSES PAPER 
+            // USER CHOOSES ROCK
 
-        if (humanChoice === "paper" && computerChoice === "rock") {
-            return console.log("You win this round! Paper defeats rock");
-        } else if (humanChoice === "paper" && computerChoice === "scissors") {
-            return console.log ("You lose this round! Scissors defeats paper");
-        }else {
-            return console.log("It's a draw! You both drew paper!");
-        }
+            if (humanSelection === "rock" && computerSelection === "scissors" ) {
+                return console.log("You win this round! Rock defeats scissors!");
+            }else if (humanSelection === "rock" && computerSelection === "paper"){
+                return console.log("You lose this round! Paper defeats rock!");
+            }else if (humanSelection === "rock" && computerSelection=== "rock") {
+                return console.log("It's a draw! You both drew rock!");
+            }
+              
+            // USER CHOOSES SCISSORS
+    
+            if (humanSelection === "scissors" && computerSelection === "paper") {
+                return console.log("You win this round! Scissors defeats paper!")
+            } else if (humanSelection === "scissors" && computerSelection === "rock") {
+                return console.log("You lose this round! Rock defeats scissors!");
+            } else if (humanSelection === "scissors" && computerSelection === "scissors") {
+                return console.log("It's a draw! You both drew scissors!");
+            }
+    
+            // USER CHOOSES PAPER 
+    
+            if (humanSelection === "paper" && computerSelection === "rock") {
+                return console.log("You win this round! Paper defeats rock");
+            } else if (humanSelection === "paper" && computerSelection === "scissors") {
+                return console.log ("You lose this round! Scissors defeats paper");
+            }else {
+                return console.log("It's a draw! You both drew paper!");
+            }
+        }while (round < 5)
+
+
 
 }
 
-const humanSelection = getHumanChoice();
-const computerSelection = getComputerChoice();
 
-playRound(humanSelection, computerSelection);
+
+playRound();
