@@ -35,38 +35,36 @@ function playRound() {
             // USER CHOOSES ROCK
 
             if (humanSelection === "rock" && computerSelection === "scissors" ) {
-                return console.log("You win this round! Rock defeats scissors!");
+                console.log("You win this round! Rock defeats scissors!");
             }else if (humanSelection === "rock" && computerSelection === "paper"){
-                return console.log("You lose this round! Paper defeats rock!");
+                console.log("You lose this round! Paper defeats rock!");
             }else if (humanSelection === "rock" && computerSelection=== "rock") {
-                return console.log("It's a draw! You both drew rock!");
+                console.log("It's a draw! You both drew rock!");
             }
               
             // USER CHOOSES SCISSORS
     
             if (humanSelection === "scissors" && computerSelection === "paper") {
-                return console.log("You win this round! Scissors defeats paper!")
+                console.log("You win this round! Scissors defeats paper!")
             } else if (humanSelection === "scissors" && computerSelection === "rock") {
-                return console.log("You lose this round! Rock defeats scissors!");
+                console.log("You lose this round! Rock defeats scissors!");
             } else if (humanSelection === "scissors" && computerSelection === "scissors") {
-                return console.log("It's a draw! You both drew scissors!");
+                console.log("It's a draw! You both drew scissors!");
             }
     
             // USER CHOOSES PAPER 
     
             if (humanSelection === "paper" && computerSelection === "rock") {
-                return console.log("You win this round! Paper defeats rock");
+                console.log("You win this round! Paper defeats rock");
             } else if (humanSelection === "paper" && computerSelection === "scissors") {
-                return console.log ("You lose this round! Scissors defeats paper");
-            }else {
-                return console.log("It's a draw! You both drew paper!");
+                console.log ("You lose this round! Scissors defeats paper");
+            }else if (humanSelection === "paper" && computerSelection === "paper"){
+                console.log("It's a draw! You both drew paper!");
             }
+
+            round++;
+
         }while (round < 5)
-
-
-
 }
-
-
 
 playRound();
