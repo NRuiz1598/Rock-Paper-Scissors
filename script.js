@@ -19,13 +19,13 @@ function getComputerChoice() {
 
 getComputerChoice()
 
-
+let humanScore = 0; 
+let computerScore = 0;
+let round = 0
 
 function playRound() {
 
-    let humanScore = 0; 
-    let computerScore = 0;
-    let round = 0
+
 
         do {
 
@@ -71,6 +71,20 @@ function playRound() {
             round++;
 
         }while (round < 5)
+        console.log(`Game Over! You: ${humanScore}, Computer: ${computerScore}`);
 }
 
+
 playRound();
+
+function result() {
+    if (humanScore > computerScore) {
+        console.log('You are the winner, congratulations!')
+    }else if (humanScore <  computerScore) {
+        console.log('You lost try again :c') 
+    }else {
+        console.log('Its a Draw nice try!')
+    }
+}
+
+result();
