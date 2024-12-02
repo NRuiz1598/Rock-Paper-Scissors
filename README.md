@@ -22,3 +22,10 @@
 - I need to start using things like debugger and breakpoints to improve my debugging skills even more, although I always tried to paid attention to what the console say when an error popped even as a complete beginner.
 
 - My code is super messy and repetitive, I hope to get better at this with more experience and practice.
+
+### To do Later
+
+- Reduce Repetition (Code optimization)
+- Add validation to the user input 
+- Create other functions to reduce what playRound handles
+
